@@ -1,0 +1,14 @@
+{
+  "name": "connorkeevill.github.io",
+  "version": "1.0.0",
+  "description": "Personal Website",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
