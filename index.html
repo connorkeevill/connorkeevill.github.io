@@ -11,21 +11,22 @@
 
 <body>
 	<div class="terminal-container">
+		<div class="terminal-header">
+			<div class="traffic-light red"></div>
+			<div class="traffic-light yellow"></div>
+			<div class="traffic-light green"></div>
+		</div>
 		<div class="terminal">
-			<div class="terminal-header">
-				<div class="traffic-light red"></div>
-				<div class="traffic-light yellow"></div>
-				<div class="traffic-light green"></div>
-			</div>
 			<div class="terminal-content">
 				<div class="terminal-output"></div>
 			</div>
 			<div class="terminal-input">
 				<span class="prompt">$</span>
 				<span id="command"></span>
+				<span class="cursor"></span>
 			</div>
 			<div class="output-line">
-				<span id="output"></span>
+				<strong><span id="output"></span></strong>       
 			</div>
 		</div>
 	</div>
