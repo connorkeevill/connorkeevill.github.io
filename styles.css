@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   padding: 0;
@@ -35,7 +39,7 @@ body {
 
 .terminal-container {
   margin: 50px;
-  width: 40%;
+  width: 100%;
   overflow: hidden;
   border: 1px solid #888;
   position: relative;
