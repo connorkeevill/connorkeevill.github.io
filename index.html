@@ -5,7 +5,8 @@
 	<title>Connor Keevill</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
-	<script src="script.js"></script>
+
+	<script src="script.js" type="module"></script>
 </head>
 
 <body>
@@ -21,10 +22,10 @@
 			</div>
 			<div class="terminal-input">
 				<span class="prompt">$</span>
-				<span class="command"></span>
+				<span id="command"></span>
 			</div>
 			<div class="output-line">
-				<span class="output">> </span>
+				<span id="output"></span>
 			</div>
 		</div>
 	</div>
