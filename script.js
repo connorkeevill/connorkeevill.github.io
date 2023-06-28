@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', async function() {
   const outputCursorElement = document.getElementById('output-cursor');
 
   const command = 'whoami';
-  const name = "Connor\nKeevill";
+  const name = "Connor Keevill";
 
   await typeTextInElement(command, commandElement);
   await sleep(300);
