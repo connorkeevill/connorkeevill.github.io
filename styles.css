@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'JetBrains Mono', 'Courier New', Courier, monospace;
-  background-color: #ddd;
+  background-color: #333;
   color: #fff;
 }
 
@@ -90,6 +90,11 @@ body {
 .terminal-input {
   margin-bottom: 10px;
 }
+
+/* .text-green-terminal
+{
+  color: rgb(44, 98, 31)
+} */
 
 #name {
   font-size: 5em;
