@@ -626,6 +626,11 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.text-color-terminal {
+  --tw-text-opacity: 1;
+  color: rgb(74 246 38 / var(--tw-text-opacity));
+}
+
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
@@ -720,11 +725,6 @@ body {
 .terminal-input {
   margin-bottom: 10px;
 }
-
-/* .text-green-terminal
-{
-  color: rgb(44, 98, 31)
-} */
 
 #name {
   font-size: 5em;
