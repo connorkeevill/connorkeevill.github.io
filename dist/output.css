@@ -685,7 +685,7 @@ video {
 }
 
 body {
-  font-family: 'JetBrains Mono', 'Courier New', Courier, monospace;
+  font-family: "JetBrains Mono", "Courier New", Courier, monospace;
   background-color: #333;
   color: #fff;
 }
@@ -725,7 +725,8 @@ body {
 
 .tilting-card:hover {
   /* transform: rotate3d(0, 1, 0, calc((var(--mouse-x) * -40deg))) rotate3d(1, 0, 0, calc((var(--mouse-y) * 40deg))); */
-  transform: rotateY(calc(var(--mouse-x) * 12deg)) rotateX(calc(var(--mouse-y) * -12deg));
+  transform: rotateY(calc(var(--mouse-x) * 12deg))
+		rotateX(calc(var(--mouse-y) * -12deg));
 }
 
 .tilting-card-parent {

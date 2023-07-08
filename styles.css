@@ -3,46 +3,47 @@
 @tailwind utilities;
 
 body {
-  font-family: 'JetBrains Mono', 'Courier New', Courier, monospace;
-  background-color: #333;
-  color: #fff;
+	font-family: "JetBrains Mono", "Courier New", Courier, monospace;
+	background-color: #333;
+	color: #fff;
 }
 
 .cursor {
-  display: inline-block;
-  width: 0.2em;
-  height: 100%;
-  background-color: green;
-  animation: blinkCursor 0.6s infinite;
+	display: inline-block;
+	width: 0.2em;
+	height: 100%;
+	background-color: green;
+	animation: blinkCursor 0.6s infinite;
 }
 
 @keyframes blinkCursor {
-  0% {
-    opacity: 1;
-  }
-  
-  50% {
-    opacity: 0;
-  }
-  
-  100% {
-    opacity: 1;
-  }
+	0% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
 
 .tilting-card {
-  perspective: 1000px; /* Set the perspective for the 3D effect */
-  transform-style: preserve-3d; /* Preserve the 3D transformations of child elements */
-  transform: rotateY(0deg) rotateX(0deg) translateZ(0); /* Apply the initial tilt angle */
-  transition: transform 0.3s ease-out; /* Add a smooth transition effect */
+	perspective: 1000px; /* Set the perspective for the 3D effect */
+	transform-style: preserve-3d; /* Preserve the 3D transformations of child elements */
+	transform: rotateY(0deg) rotateX(0deg) translateZ(0); /* Apply the initial tilt angle */
+	transition: transform 0.3s ease-out; /* Add a smooth transition effect */
 }
 
 .tilting-card:hover {
-  /* transform: rotate3d(0, 1, 0, calc((var(--mouse-x) * -40deg))) rotate3d(1, 0, 0, calc((var(--mouse-y) * 40deg))); */
-  transform: rotateY(calc(var(--mouse-x) * 12deg)) rotateX(calc(var(--mouse-y) * -12deg));
+	/* transform: rotate3d(0, 1, 0, calc((var(--mouse-x) * -40deg))) rotate3d(1, 0, 0, calc((var(--mouse-y) * 40deg))); */
+	transform: rotateY(calc(var(--mouse-x) * 12deg))
+		rotateX(calc(var(--mouse-y) * -12deg));
 }
 
 .tilting-card-parent {
-  perspective: 1000px;
-  perspective-origin: center;
+	perspective: 1000px;
+	perspective-origin: center;
 }
