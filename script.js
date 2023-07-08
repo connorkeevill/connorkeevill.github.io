@@ -14,5 +14,5 @@ document.addEventListener('DOMContentLoaded', async function() {
   await sleep(300);
   commandCursorElement.style.display = "none";
   await typeTextInElement(name, outputElement);
-  postCursorElement.style.display = "block";
+  postCursorElement.style.visibility = "visible";
 });
