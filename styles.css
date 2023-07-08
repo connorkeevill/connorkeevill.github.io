@@ -8,28 +8,6 @@ body {
 	color: #fff;
 }
 
-.cursor {
-	display: inline-block;
-	width: 0.2em;
-	height: 100%;
-	background-color: green;
-	animation: blinkCursor 0.6s infinite;
-}
-
-@keyframes blinkCursor {
-	0% {
-		opacity: 1;
-	}
-
-	50% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 1;
-	}
-}
-
 .tilting-card {
 	perspective: 1000px; /* Set the perspective for the 3D effect */
 	transform-style: preserve-3d; /* Preserve the 3D transformations of child elements */

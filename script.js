@@ -21,17 +21,21 @@ $(".tilting-card").each(function () {
 });
 
 document.addEventListener("DOMContentLoaded", async function () {
-	const commandElement = document.getElementById("command");
-	const commandCursorElement = document.getElementById("command-cursor");
-	const outputElement = document.getElementById("name");
-	const postCursorElement = document.getElementById("post-cursor");
+	const whoamiCommand = document.getElementById("whoami-command");
+	const outputElement = document.getElementById("name-output");
+	const idCommandElement = document.getElementById("id-command");
+	const aboutMeSection = document.getElementById("about-me");
 
 	const command = "whoami";
 	const name = "Connor Keevill";
 
-	await typeTextInElement(command, commandElement);
-	await sleep(150);
-	commandCursorElement.style.display = "none";
+	await typeTextInElement(command, whoamiCommand);
+	await sleep(250);
 	await typeTextInElement(name, outputElement);
-	postCursorElement.style.visibility = "visible";
+	idCommandElement.style.visibility = "visible";
+	await sleep(300);
+	await typeTextInElement("id", idCommandElement)
+
+	await sleep(250)
+	aboutMeSection.style.visibility = "visible";
 });
