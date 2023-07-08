@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', async function() {
   const commandElement = document.getElementById('command');
   const commandCursorElement = document.getElementById('command-cursor');
   const outputElement = document.getElementById('name');
-  const outputCursorElement = document.getElementById('output-cursor');
+  const postCursorElement = document.getElementById('post-cursor');
 
   const command = 'whoami';
   const name = "Connor Keevill";
@@ -14,5 +14,5 @@ document.addEventListener('DOMContentLoaded', async function() {
   await sleep(300);
   commandCursorElement.style.display = "none";
   await typeTextInElement(name, outputElement);
-  outputCursorElement.style.display = "block";
+  postCursorElement.style.display = "block";
 });
