@@ -39,11 +39,11 @@ body {
 
 .tilting-card:hover {
 	/* transform: rotate3d(0, 1, 0, calc((var(--mouse-x) * -40deg))) rotate3d(1, 0, 0, calc((var(--mouse-y) * 40deg))); */
-	transform: rotateY(calc(var(--mouse-x) * 12deg))
-		rotateX(calc(var(--mouse-y) * -12deg));
+	transform: rotateY(calc(var(--mouse-x) * 10deg))
+		rotateX(calc(var(--mouse-y) * -10deg));
 }
 
 .tilting-card-parent {
-	perspective: 1000px;
+	perspective: 4000px;
 	perspective-origin: center;
 }
