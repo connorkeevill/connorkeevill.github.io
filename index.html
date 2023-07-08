@@ -11,31 +11,31 @@
 </head>
 <body>
 <div class="bg-gradient-to-r from-blue-600 via-blue-500 to-yellow-500 p-5">
-		<!-- The terminal -->
-		<div class="bg-black rounded-lg overflow-auto shadow-md hover:shadow-2xl transition-shadow duration-500">
-			<!-- Terminal header -->
-			<div class="flex items-center bg-gray-800 py-2 px-4">
-				<div class="w-3 h-3 rounded-full bg-red-500 mr-2"></div>
-				<div class="w-3 h-3 rounded-full bg-yellow-500 mr-2"></div>
-				<div class="w-3 h-3 rounded-full bg-green-500"></div>
+	<!-- The terminal -->
+	<div class="mx-auto bg-black rounded-lg overflow-auto shadow-md hover:shadow-2xl transition-shadow duration-500 h-60 w-1/2">
+		<!-- Terminal header -->
+		<div class="flex items-center bg-gray-800 py-2 px-4">
+			<div class="w-3 h-3 rounded-full bg-red-500 mr-2"></div>
+			<div class="w-3 h-3 rounded-full bg-yellow-500 mr-2"></div>
+			<div class="w-3 h-3 rounded-full bg-green-500"></div>
+		</div>
+		<!-- Terminal content -->
+		<div class="bg-black text-color-terminal overflow-y-auto p-4 h-60">
+			<div class="h-4">
+				<span>$ </span><span id="command"></span>
+				<span class="cursor" id="command-cursor"></span>
 			</div>
-			<!-- Terminal content -->
-			<div class="bg-black text-color-terminal overflow-y-auto p-4 h-60">
-				<div class="h-4">
-					<span>$ </span><span id="command"></span>
-					<span class="cursor" id="command-cursor"></span>
-				</div>
-				<div class="ml-2 my-5">
-					<strong><span class="text-7xl" id="name"></span></strong>
-				</div>
-				<div id="post-cursor" class="invisible h-4">
-					<span>$ </span>
-					<span class="cursor"></span>
-				</div>
+			<div class="ml-2 my-5">
+				<strong><span class="md:text-7xl text-5xl" id="name"></span></strong>
+			</div>
+			<div id="post-cursor" class="invisible h-4">
+				<span>$ </span>
+				<span class="cursor"></span>
 			</div>
 		</div>
-	<!-- About me -->
+	</div>
 </div>
+<!-- About me -->
 <div class="col-span-6">
 	<h1>Hello 👋, I'm Connor</h1>
 </div>
