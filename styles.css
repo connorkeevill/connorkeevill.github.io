@@ -35,15 +35,35 @@ body {
 	transform-style: preserve-3d; /* Preserve the 3D transformations of child elements */
 	transform: rotateY(0deg) rotateX(0deg) translateZ(0); /* Apply the initial tilt angle */
 	transition: transform 0.3s ease-out; /* Add a smooth transition effect */
+	animation: wobble 10s infinite cubic-bezier(0.25, 0.1, 0.25, 1) alternate;
 }
 
 .tilting-card:hover {
 	/* transform: rotate3d(0, 1, 0, calc((var(--mouse-x) * -40deg))) rotate3d(1, 0, 0, calc((var(--mouse-y) * 40deg))); */
 	transform: rotateY(calc(var(--mouse-x) * 10deg))
 		rotateX(calc(var(--mouse-y) * -10deg));
+	animation: none;
 }
 
 .tilting-card-parent {
 	perspective: 4000px;
 	perspective-origin: center;
 }
+
+@keyframes wobble {
+	0% {
+	  transform: rotateY(0deg);
+	}
+	25% {
+	  transform: rotateY(3deg);
+	}
+	50% {
+	  transform: rotateY(0deg) rotateX(3deg);
+	}
+	75% {
+	  transform: rotateY(-3deg);
+	}
+	100% {
+	  transform: rotateY(0deg) rotateX(-3deg);
+	}
+  }
