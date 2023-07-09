@@ -23,19 +23,12 @@ $(".tilting-card").each(function () {
 document.addEventListener("DOMContentLoaded", async function () {
 	const whoamiCommand = document.getElementById("whoami-command");
 	const outputElement = document.getElementById("name-output");
-	const idCommandElement = document.getElementById("id-command");
-	const aboutMeSection = document.getElementById("about-me");
+	const aboutMeOutputElement = document.getElementById("about-output");
 
-	const command = "whoami";
-	const name = "Connor Keevill";
-
-	await typeTextInElement(command, whoamiCommand);
-	await sleep(250);
-	await typeTextInElement(name, outputElement, 90);
-	idCommandElement.style.visibility = "visible";
-	await sleep(300);
-	await typeTextInElement("id", idCommandElement)
-
-	await sleep(250)
-	aboutMeSection.style.visibility = "visible";
+	// Type first command, wait for the command to be "executed", and type name and tagline.
+	await typeTextInElement("whoami", whoamiCommand, 100);
+	await sleep(150);
+	await typeTextInElement("Connor Keevill", outputElement, 75);
+	await sleep(150);
+	await typeTextInElement("Computer Scientist, Software Engineer, and Problem Solver.", aboutMeOutputElement, 40);
 });
