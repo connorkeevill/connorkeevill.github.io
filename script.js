@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
 	await typeTextInElement(command, whoamiCommand);
 	await sleep(250);
-	await typeTextInElement(name, outputElement);
+	await typeTextInElement(name, outputElement, 90);
 	idCommandElement.style.visibility = "visible";
 	await sleep(300);
 	await typeTextInElement("id", idCommandElement)

@@ -5,12 +5,13 @@ import sleep from "./utils.js";
  *
  * @param {*} text the text to type.
  * @param {*} element the element to type the text in.
+ * @param {*} keystrokeTime how long it takes to type each character.
  */
-export default async function typeTextInElement(text, element) {
+export default async function typeTextInElement(text, element, keystrokeTime=150) {
 	let index = 0;
 
 	for (let char of text) {
 		element.innerHTML += char;
-		await sleep(150);
+		await sleep(keystrokeTime);
 	}
 }
