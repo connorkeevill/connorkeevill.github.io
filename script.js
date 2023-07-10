@@ -30,5 +30,9 @@ document.addEventListener("DOMContentLoaded", async function () {
 	await sleep(150);
 	await typeTextInElement("Connor Keevill", outputElement, 75);
 	await sleep(150);
-	await typeTextInElement("Computer Scientist, Software Engineer, and Problem Solver.", aboutMeOutputElement, 40);
+	await typeTextInElement("Computer Scientist, ", aboutMeOutputElement, 40);
+	await sleep(150)
+	await typeTextInElement("Software Engineer, ", aboutMeOutputElement, 40);
+	await sleep(150)
+	await typeTextInElement("and Problem Solver.", aboutMeOutputElement, 40);
 });
