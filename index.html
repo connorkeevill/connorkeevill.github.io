@@ -13,6 +13,7 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="script.js" type="module"></script>
 </head>
+
 <body>
 
 <!-- The terminal -->
@@ -45,10 +46,10 @@
 </div>
 
 <!-- Navbar -->
-<nav class="tracking-widest text-2xl sticky items-center top-0 py-10 mx-auto w-min">
+<nav class="tracking-widest text-xl sticky items-center top-0 pt-10 mx-auto w-min">
 	<ul class="backdrop-blur-md rounded-full space-x-4 flex p-2">
 		<li class="rounded-full hover:bg-slate-300 hover:bg-opacity-10 py-1 px-5 transition ease-in-out delay-50 duration-300">
-			<a href="#">About</a>
+			<a href="#about">About</a>
 		</li>
 		<li class="rounded-full hover:bg-slate-300 hover:bg-opacity-10 py-1 px-5 transition ease-in-out delay-50 duration-300">
 			<a href="#">Projects</a>
@@ -60,8 +61,16 @@
 </nav>
 
 <!-- About Section -->
-<div class="m-10">
-	<p>Hi, I'm Connor.</p>
+<div id="about" class="mx-36 mt-10">
+	<p class="py-6 text-8xl text-center">I'm Connor</p>
+	<div class="grid grid-cols-9 gap-20 mt-3">
+		<div class="col-span-3">
+			<img class="w-full rounded-lg" src="/images/headshot.jpeg"/>
+		</div>
+		<div class="col-span-6">
+			<p class="text-lg">I like making things</p>
+		</div>
+	</div>
 </div>
 
 <!-- temporary just so we can see the stickiness -->
