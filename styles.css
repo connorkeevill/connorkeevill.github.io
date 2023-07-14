@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-	font-family: "JetBrains Mono", "Courier New", Courier, monospace;
-	background-color: #333;
-	color: #fff;
-}
-
 .tilting-card {
 	perspective: 1000px; /* Set the perspective for the 3D effect */
 	transform-style: preserve-3d; /* Preserve the 3D transformations of child elements */
@@ -44,4 +38,21 @@ body {
 	100% {
 	  transform: rotateY(0deg) rotateX(-3deg);
 	}
+  }
+
+  .gradient-fade {
+    background-size: 400%; /* */
+
+    -webkit-animation: moving-background-gradient 10s ease infinite;
+    -moz-animation: moving-background-gradient 10s ease infinite;
+    animation: moving-background-gradient 10s ease infinite;
+  }
+
+  @keyframes moving-background-gradient {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
   }
